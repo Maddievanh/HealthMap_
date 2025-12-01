@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HealthMapp</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- TOP NAV -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">HealthMapp</div>
+      <a href="#">Resources</a>
+      <a href="#">Find Care</a>
+      <a href="#">AI Assistant</a>
+    </div>
+    <div class="nav-right">
+      <span class="phone">📞 1-800-HEALTH</span>
+      <button class="help-btn">Get Help Now</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find <span class="highlight">Affordable</span><br>Healthcare Near You</h1>
+
+      <p class="hero-sub">
+        Your virtual assistant for accessible physical and mental health resources.
+        Connect with affordable care options, medication discounts, and support programs.
+      </p>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Enter your ZIP code"/>
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="hero-buttons">
+        <button class="outline-btn">Talk to AI Assistant</button>
+        <button class="gray-btn">Browse Resources</button>
+      </div>
+    </div>
+
+    <div class="hero-img"></div>
+  </section>
+
+  <!-- RESOURCE CARDS -->
+  <section class="resources-section">
+    <h2>Comprehensive Healthcare Resources</h2>
+    <p class="res-sub">
+      Find the care you need with physical health, mental wellness, and community support resources.
+    </p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <img src="https://i.ibb.co/2vKNcDq/mental.png" alt="">
+        <h3>Mental Health</h3>
+        <p>Access counseling, therapy, and mental wellness support.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="resource-card">
+        <img src="https://i.ibb.co/YBHLhWs/clinic.png" alt="">
+        <h3>Physical Health</h3>
+        <p>Find clinics, doctors, and healthcare facilities near you.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="resource-card">
+        <img src="https://i.ibb.co/yV5dd7h/meds.png" alt="">
+        <h3>Medication Assistance</h3>
+        <p>Discover prescription discounts and assistance programs.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+      <div class="resource-card">
+        <img src="https://i.ibb.co/pv7TCtV/community.png" alt="">
+        <h3>Community Support</h3>
+        <p>Connect with support groups and helpful community services.</p>
+        <a href="#" class="learn">Learn More →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <div class="footer-logo">HealthMapp</div>
+      <p>Connecting you to affordable healthcare resources and support.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#">Resources</a>
+      <a href="#">Find Care</a>
+      <a href="#">AI Assistant</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">FAQs</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="footer-help">
+      <h4>Get Help Now</h4>
+      <p>📞 1-800-HEALTH</p>
+      <p>📧 support@healthmapp.com</p>
+      <p>Available 24/7</p>
+    </div>
+  </footer>
+<!-- PAGES FOR SPA (hidden by default) -->
+<section id="search" class="hidden">
+  <h2>Search Results</h2>
+  <p id="search-results-text"></p>
+  <div id="map"></div>
+  <div id="clinic-results"></div>
+</section>
+
+<section id="mental" class="hidden">
+  <h2>Mental Health Resources</h2>
+  <p>Therapy, counseling, crisis lines, and more.</p>
+</section>
+
+<section id="physical" class="hidden">
+  <h2>Physical Health Resources</h2>
+  <p>Clinics, urgent care, primary care options.</p>
+</section>
+
+<section id="medication" class="hidden">
+  <h2>Medication Assistance</h2>
+  <p>Prescription discount programs and support services.</p>
+</section>
+
+<section id="community" class="hidden">
+  <h2>Community Support Programs</h2>
+  <p>Local aid, social services, and community centers.</p>
+</section>
+<!-- AI CHAT WIDGET -->
+<div id="chat-widget">
+  <div id="chat-header">AI Assistant</div>
+  <div id="chat-body"></div>
+  <div id="chat-input-area">
+    <input type="text" id="chat-input" placeholder="Ask me anything..."/>
+    <button id="chat-send">Send</button>
+  </div>
+</div>
+
+<button id="chat-toggle">💬 Chat</button>
+
+</body>
+</html>
